@@ -22,25 +22,17 @@ mkdir -p out
 
 <!-- ############################### PING ENDPOINT  ############################ -->
 # To Compile Ping
-javac -cp ".:lib/smobilpay-s3p-java-client-1.0.0.jar" -d out src/src/Check.java
+javac -cp ".:lib/smobilpay-s3p-java-client-1.0.0.jar" -d out src/Check.java
 
-# To Execute Ping
-<!-- This can be used windows  -->
-java -cp ".:lib/smobilpay-s3p-java-client-1.0.0.jar:out" Check
-
-# Execute with updated dependecies
+# Execute
 <!-- This is for macos or linux -->
 java -cp ".:lib/*:out" Check 
 
 <!-- ############################### CASHOUT FLOW  ############################ -->
 
 # To Compile Cahout Flow
-javac -cp ".:lib/smobilpay-s3p-java-client-1.0.0.jar" -d out src/src/CashOutCollectionExample.java
+javac -cp ".:lib/smobilpay-s3p-java-client-1.0.0.jar" -d out src/CashOutCollectionExample.java
 
-# To Execute Cashout Flow
-<!-- This can be used windows -->
-java -cp ".:lib/smobilpay-s3p-java-client-1.0.0.jar:out" CashOutCollectionExample
-
-# Execute with updated dependecies
+# Execute
 <!-- This is for macos or linux -->
 java -cp ".:lib/*:out" CashOutCollectionExample 
